@@ -154,6 +154,21 @@
       padding: $--button-mini-padding-vertical;
     }
   }
+  @include m(nuni) {
+    @include button-size($--button-nuni-padding-vertical, $--button-nuni-padding-horizontal, $--button-nuni-font-size, $--button-nuni-border-radius);
+    @include when(circle) {
+      padding: $--button-nuni-padding-vertical;
+    }
+    
+    color: rgb(54, 133, 246);
+    background-color: white;
+    border-color: transparent;
+    &:active {
+      color: white;
+      background-color: rgb(107, 211, 95);
+      border-color: transparent;
+    }
+  }
   @include m(text) {
     border-color: transparent;
     color: $--color-primary;
