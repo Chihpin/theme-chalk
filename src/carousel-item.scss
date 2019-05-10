@@ -5,8 +5,9 @@
   @include e(item) {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
+    left: 35px;
+    right: 35px;
+    width: calc(100%-70px);
     height: 100%;
     display: inline-block;
     overflow: hidden;
